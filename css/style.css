@@ -10,6 +10,19 @@ body {
     margin: 0;
     padding: 0;
 }
+h2 {
+    margin: 40px 0 20px 0;
+    font-size: 38px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.4s ease, letter-spacing 0.4s ease;
+}
+
+h2:hover {
+    color: #7850ab;
+    letter-spacing: 2px;
+}
 
 /* =========================
    TÍTULO PRINCIPAL
@@ -21,7 +34,7 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     text-shadow: 10px 10px 10px black;
     transition: 0.7s;
 }
@@ -30,7 +43,22 @@ h1:hover {
     color: purple;
     transform: scale(1.1);
 }
-
+.subtitulo-inicio{
+    padding: 0 0 10px 0 ;
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 10px black;
+    transition: 0.7s;
+    font-size: 14px;
+}
+.subtitulo-inicio:hover {
+    color: purple;
+    transform: scale(1.1);
+}
 /* =========================
    NAV
 ========================= */
@@ -53,12 +81,12 @@ nav a {
     padding: 20px;
     text-decoration: none;
     color: black;
-    transition: 1s;
+    transition: color 0.4s ease, letter-spacing 0.4s ease;
 }
 
 nav a:hover {
     color: #7850ab;
-    transform: scale(1.1);
+    letter-spacing: 2px;
 }
 
 /* =========================
@@ -119,7 +147,10 @@ nav a:hover {
     padding: 14px;
     box-sizing: border-box;
     background-color: white;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.98)
+        ),
         url(../images/logo-png.png);
     background-position: center;
     background-size: 400px;
@@ -187,7 +218,7 @@ h3 {
     color: black;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
 }
@@ -231,7 +262,7 @@ h3 {
     transition: 1s;
 }
 
-.subtitulos-catalogo:hover{
+.subtitulos-catalogo:hover {
     color: #7850ab;
     transform: scale(1.1);
 }
@@ -242,6 +273,7 @@ h3 {
 footer {
     margin: 20px;
     padding: 30px;
+    text-align: center;
 }
 
 /* =========================
