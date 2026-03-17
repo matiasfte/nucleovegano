@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     margin: 40px 0 20px 0;
     font-size: 38px;
@@ -43,8 +44,9 @@ h1:hover {
     color: purple;
     transform: scale(1.1);
 }
-.subtitulo-inicio{
-    padding: 0 0 10px 0 ;
+
+.subtitulo-inicio {
+    padding: 0 0 10px 0;
     margin: 0;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -55,10 +57,12 @@ h1:hover {
     transition: 0.7s;
     font-size: 14px;
 }
+
 .subtitulo-inicio:hover {
     color: purple;
     transform: scale(1.1);
 }
+
 /* =========================
    NAV
 ========================= */
@@ -97,33 +101,132 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    max-width: 100%;
-    margin: 30px;
-    padding: 18px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px 10px 40px 10px;
     box-sizing: border-box;
-    background-color: #EDE7F2;
-    border-radius: 8px;
-    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .p-presentacion {
-    width: 70%;
+    width: 60%;
     max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     text-align: left;
     line-height: 35px;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
 }
 
 .img-presentacion {
-    width: 30%;
-    max-width: 320px;
-    margin: 5px;
+    width: 40%;
+    max-width: 380px;
+    margin: 0;
+    border-radius: 14px;
+    display: block;
+}
+/* =========================
+   HOME - FAVORITOS
+========================= */
+.favoritos-home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin: 30px;
+    align-items: start;
+}
+
+.bloque-favoritos {
+    background-color: #EDE7F2;
     border-radius: 8px;
+    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
+    padding: 28px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.titulo-favoritos {
+    margin: 0;
+    text-align: center;
+}
+
+.favoritos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.favorito-card {
+    background-color: white;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.95)
+        ),
+        url(../images/logo-png.png);
+    background-position: center;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
+    padding: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.favorito-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px 2px #F7F3EE;
+}
+
+.favorito-card h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.columna-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.info-pedidos,
+.info-eventos {
+    background-color: #EDE7F2;
+    border-radius: 8px;
+    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
+    padding: 28px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+
+.info-pedidos h2,
+.info-eventos h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.info-pedidos p,
+.info-eventos p {
+    margin: 0;
+    line-height: 30px;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* =========================
@@ -236,7 +339,7 @@ h3 {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 8px 12px;
+    padding: 10px 12px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -244,6 +347,9 @@ h3 {
     background-color: #EDE7F2;
     border-radius: 8px;
     transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .boton-links:hover {
@@ -264,7 +370,55 @@ h3 {
 
 .subtitulos-catalogo:hover {
     color: #7850ab;
-    transform: scale(1.1);
+    transform: scale(1.03);
+}
+/* =========================
+   DÓNDE ENCONTRARNOS
+========================= */
+.donde-encontrarnos {
+    margin: 30px;
+    padding: 10px 0;
+}
+
+.donde-encontrarnos h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.intro-locales {
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.lista-locales {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 10px;
+}
+
+.item-local {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.item-local h3 {
+    margin: 0 0 6px 0;
+    text-align: left;
+    font-size: 22px;
+}
+
+.item-local p {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    line-height: 26px;
 }
 
 /* =========================
@@ -276,10 +430,52 @@ footer {
     text-align: center;
 }
 
+footer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 900px) {
+    .presentacion {
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 20px;
+    padding: 0 0 30px 0;
+    }
+
+    .p-presentacion,
+    .img-presentacion {
+    width: 100%;
+    }
+
+    .p-presentacion {
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    }
+
+    .img-presentacion {
+    max-width: 400px;
+    }
+
+    .favoritos-home {
+        grid-template-columns: 1fr;
+    }
+
+    .favoritos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .columna-info {
+        width: 100%;
+    }
+
     .contenedor-catalogo {
         grid-template-columns: 1fr;
     }
@@ -299,17 +495,21 @@ footer {
         min-width: unset;
     }
 
-    .presentacion {
-        flex-direction: column;
-        gap: 30px;
+    .info-pedidos p,
+    .info-eventos p {
+        text-align: center;
+    }
+    .donde-encontrarnos {
+    margin: 30px 20px;
     }
 
-    .p-presentacion,
-    .img-presentacion {
-        width: 100%;
+    .lista-locales {
+    grid-template-columns: 1fr;
+    column-gap: 0;
     }
 
-    .img-presentacion {
-        max-width: 400px;
+    .intro-locales {
+    font-size: 17px;
+    line-height: 28px;
     }
 }
