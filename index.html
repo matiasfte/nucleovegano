@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Núcleo Vegano | Inicio</title>
+    <title>Núcleo Vegano | Cocina vegana artesanal en Córdoba</title>
+    <meta name="description" content="Núcleo Vegano es un emprendimiento de cocina vegana artesanal en Córdoba, con propuestas dulces y saladas, pedidos personalizados y opciones para eventos.">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -15,20 +16,22 @@
         rel="stylesheet"
     >
 </head>
-
 <body>
-    <header id="inicio">
-        <div>
-            <h1>Núcleo Vegano</h1>
-            <h2 class="subtitulo-inicio">Cocina vegana artesanal</h2>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <div class="branding">
+                <h1 class="logo-titulo">Núcleo Vegano</h1>
+                <p class="logo-subtitulo">Cocina vegana artesanal</p>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -50,18 +53,24 @@
                     Lo más importante: todo lo que hago es 100% vegano, elaborado con mucho amor y respeto por los
                     animales y el planeta.
                 </p>
+
+                <p class="cierre-presentacion">
+                    Si querés seguir acompañando este sueño, te invito a encontrarnos en
+                    <a href="https://www.instagram.com/nucleovegano/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    y ser parte del día a día de Núcleo Vegano.
+                </p>
             </div>
 
             <img
                 src="images/presentacion.jpg"
-                alt="Imagen de presentación"
+                alt="Imagen de presentación de Núcleo Vegano"
                 class="img-presentacion"
             >
         </section>
 
         <section class="favoritos-home">
             <div class="bloque-favoritos">
-                <h2 class="titulo-favoritos">Favoritos de la semana</h2>
+                <h2 class="section-title titulo-favoritos">Favoritos de la semana</h2>
 
                 <div class="favoritos-grid">
                     <article class="favorito-card">
@@ -92,31 +101,33 @@
 
             <div class="columna-info">
                 <div class="porque-nucleo">
-                    <h2>¿Por qué elegir Núcleo?</h2>
+                    <h2 class="section-title">¿Por qué elegir Núcleo?</h2>
                     <p>
                         Porque cada propuesta está hecha de manera artesanal, con ingredientes 100% veganos,
                         atención personalizada y una búsqueda real de sabor, estética y calidez en cada detalle.
                     </p>
                 </div>
 
-            <div class="eventos-nucleo">
-                <h2>Pedidos para eventos</h2>
-                <p>
-                    También realizamos propuestas dulces y saladas para cumpleaños, reuniones, celebraciones
-                    y fechas especiales, con opciones personalizadas según cada ocasión.
-                </p>
-                <a
-                    href="https://wa.me/5492966679479?text=Hola%20quiero%20consultar%20por%20un%20pedido%20para%20evento"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="boton-links">
-                    Consultar evento
-                </a>
+                <div class="eventos-nucleo">
+                    <h2 class="section-title">Pedidos para eventos</h2>
+                    <p>
+                        También realizamos propuestas dulces y saladas para cumpleaños, reuniones, celebraciones
+                        y fechas especiales, con opciones personalizadas según cada ocasión.
+                    </p>
+                    <a
+                        href="https://wa.me/5492966679479?text=Hola%20quiero%20consultar%20por%20un%20pedido%20para%20evento"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boton-links"
+                    >
+                        Consultar evento
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="donde-encontrarnos">
-            <h2>Dónde encontrarnos</h2>
+            <h2 class="section-title">Dónde encontrarnos</h2>
             <p class="intro-locales">
                 También podés encontrar productos de Núcleo Vegano en algunos espacios amigos de la ciudad.
             </p>
@@ -145,8 +156,9 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>2026 Núcleo Vegano | Todos los derechos reservados. @nucleovegano</p>
     </footer>
+
 </body>
 </html>
