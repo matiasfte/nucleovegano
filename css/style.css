@@ -20,7 +20,7 @@ h2 {
     transition: color 0.4s ease, letter-spacing 0.4s ease;
 }
 
-h2:hover {
+h2:not(.subtitulo-inicio):hover {
     color: #7850ab;
     letter-spacing: 2px;
 }
@@ -38,6 +38,7 @@ h1 {
     letter-spacing: 15px;
     text-shadow: 10px 10px 10px black;
     transition: 0.7s;
+    font-size: 50px;
 }
 
 h1:hover {
@@ -54,7 +55,7 @@ h1:hover {
     font-style: normal;
     letter-spacing: 5px;
     text-shadow: 10px 10px 10px black;
-    transition: 0.7s;
+    transition: transform 0.7s ease, color 0.7s ease;
     font-size: 14px;
 }
 
@@ -85,12 +86,12 @@ nav a {
     padding: 20px;
     text-decoration: none;
     color: black;
-    transition: color 0.4s ease, letter-spacing 0.4s ease;
+    transition: transform 0.4s ease, color 0.4s ease;
 }
 
 nav a:hover {
     color: #7850ab;
-    letter-spacing: 2px;
+    transform: scale(1.08);
 }
 
 /* =========================
@@ -129,37 +130,42 @@ nav a:hover {
     border-radius: 14px;
     display: block;
 }
+
 /* =========================
    HOME - FAVORITOS
 ========================= */
 .favoritos-home {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    margin: 30px;
+    grid-template-columns: 1.8fr 0.9fr;
+    gap: 22px;
+    max-width: 1250px;
+    margin: 40px auto;
     align-items: start;
 }
 
 .bloque-favoritos {
-    background-color: #EDE7F2;
-    border-radius: 8px;
-    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
-    padding: 28px;
+    background-color: #F1ECF5;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.18);
+    padding: 18px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 14px;
 }
 
 .titulo-favoritos {
     margin: 0;
     text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .favoritos-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 14px;
 }
 
 .favorito-card {
@@ -172,8 +178,8 @@ nav a:hover {
     background-position: center;
     background-size: 280px;
     background-repeat: no-repeat;
-    border-radius: 8px;
-    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.18);
     padding: 18px;
     box-sizing: border-box;
     text-align: center;
@@ -198,35 +204,58 @@ nav a:hover {
 .columna-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 18px;
     height: 100%;
 }
 
-.info-pedidos,
-.info-eventos {
-    background-color: #EDE7F2;
-    border-radius: 8px;
-    box-shadow: 5px 10px 15px 7px rgb(92, 77, 92);
-    padding: 28px;
-    box-sizing: border-box;
+.porque-nucleo,
+.eventos-nucleo {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    flex: 1;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-.info-pedidos h2,
-.info-eventos h2 {
+.porque-nucleo {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.porque-nucleo h2 {
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.porque-nucleo p {
     margin: 0;
     text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    line-height: 28px;
 }
 
-.info-pedidos p,
-.info-eventos p {
-    margin: 0;
-    line-height: 30px;
+.eventos-nucleo {
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.eventos-nucleo h2 {
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.eventos-nucleo p {
+    margin: 0 0 16px 0;
+    text-align: center;
     font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    line-height: 28px;
 }
 
 /* =========================
@@ -372,6 +401,7 @@ h3 {
     color: #7850ab;
     transform: scale(1.03);
 }
+
 /* =========================
    DÓNDE ENCONTRARNOS
 ========================= */
@@ -443,25 +473,25 @@ footer p {
 ========================= */
 @media (max-width: 900px) {
     .presentacion {
-    flex-direction: column;
-    gap: 30px;
-    margin: 40px 20px;
-    padding: 0 0 30px 0;
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px 20px;
+        padding: 0 0 30px 0;
     }
 
     .p-presentacion,
     .img-presentacion {
-    width: 100%;
+        width: 100%;
     }
 
     .p-presentacion {
-    text-align: center;
-    font-size: 18px;
-    line-height: 32px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     .img-presentacion {
-    max-width: 400px;
+        max-width: 400px;
     }
 
     .favoritos-home {
@@ -474,6 +504,14 @@ footer p {
 
     .columna-info {
         width: 100%;
+        height: auto;
+    }
+
+    .porque-nucleo,
+    .eventos-nucleo {
+        flex: unset;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .contenedor-catalogo {
@@ -495,21 +533,22 @@ footer p {
         min-width: unset;
     }
 
-    .info-pedidos p,
-    .info-eventos p {
+    .eventos-nucleo p,
+    .porque-nucleo p {
         text-align: center;
     }
+
     .donde-encontrarnos {
-    margin: 30px 20px;
+        margin: 30px 20px;
     }
 
     .lista-locales {
-    grid-template-columns: 1fr;
-    column-gap: 0;
+        grid-template-columns: 1fr;
+        column-gap: 0;
     }
 
     .intro-locales {
-    font-size: 17px;
-    line-height: 28px;
+        font-size: 17px;
+        line-height: 28px;
     }
 }
