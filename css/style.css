@@ -33,12 +33,12 @@ ul {
     font-size: 38px;
     font-weight: 400;
     color: #2F2522;
-    transition: color 0.4s ease, letter-spacing 0.4s ease;
+    transition: color 0.35s ease, letter-spacing 0.35s ease;
 }
 
 .section-title:hover {
     color: #7850AB;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -46,7 +46,7 @@ h3 {
     color: #2F2522;
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 /* =========================
@@ -71,18 +71,18 @@ h3 {
 .logo-titulo {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Playfair", serif;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.1;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     color: #4B3B36;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .logo-titulo:hover {
     color: #7850AB;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .logo-subtitulo {
@@ -90,10 +90,10 @@ h3 {
     padding: 0;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: #6C5B56;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -101,14 +101,14 @@ h3 {
 
 .logo-subtitulo:hover {
     color: #7850AB;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 /* =========================
    NAV
 ========================= */
 .main-nav {
-    margin-top: 26px;
+    margin-top: 24px;
 }
 
 .main-nav ul {
@@ -130,7 +130,7 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-decoration: none;
     color: #2F2522;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -148,16 +148,16 @@ h3 {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 10px 12px;
+    padding: 11px 12px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     color: #2F2522;
     background-color: #EDE7F2;
-    border-radius: 8px;
+    border-radius: 10px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -252,8 +252,8 @@ h3 {
     padding: 14px;
     box-sizing: border-box;
     background-color: #F1ECF5;
-    border-radius: 12px;
-    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.18);
+    border-radius: 14px;
+    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.14);
 }
 
 .titulo-favoritos {
@@ -261,13 +261,13 @@ h3 {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 .favoritos-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
 }
 
 .favorito-card {
@@ -278,22 +278,15 @@ h3 {
     box-sizing: border-box;
     text-align: center;
     background-color: white;
-    background-image: linear-gradient(
-            rgba(255, 255, 255, 0.55),
-            rgba(255, 255, 255, 0.95)
-        ),
-        url(../images/logo-png.png);
-    background-position: center;
-    background-size: 260px;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.18);
+    border-radius: 14px;
+    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.14);
 }
 
 .favorito-card img {
     width: 100%;
-    aspect-ratio: 3 / 2;
+    height: 220px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     box-shadow: 5px 10px 5px 2px #F7F3EE;
 }
@@ -338,7 +331,8 @@ h3 {
     margin: 0;
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 26px;
 }
 
@@ -363,44 +357,46 @@ h3 {
 }
 
 .subtitulos-catalogo {
-    margin: 24px 0 14px 0;
+    margin: 34px 0 10px 0;
     text-align: center;
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #2F2522;
-    transition: color 0.4s ease, transform 0.4s ease;
+    font-size: 30px;
+    font-family: "Playfair", serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #3B2E2A;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .subtitulos-catalogo:hover {
     color: #7850AB;
-    transform: scale(1.02);
+    transform: translateY(-1px);
 }
 
 .contenedor-catalogo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 16px;
 }
 
 .contenedor-individual {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.88);
     background-image: linear-gradient(
-            rgba(255, 255, 255, 0.72),
-            rgba(255, 255, 255, 0.97)
+            rgba(255, 255, 255, 0.82),
+            rgba(255, 255, 255, 0.96)
         ),
         url(../images/logo-png.png);
     background-position: center;
-    background-size: 280px;
+    background-size: 220px;
     background-repeat: no-repeat;
-    border-radius: 12px;
-    box-shadow: 0 10px 22px rgba(92, 77, 92, 0.16);
+    border: 1px solid rgba(123, 102, 118, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(92, 77, 92, 0.12);
 }
 
 .imagenes-catalogo {
@@ -409,26 +405,27 @@ h3 {
     object-fit: cover;
     flex-shrink: 0;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(92, 77, 92, 0.12);
-    transition: transform 0.4s ease;
+    box-shadow: 0 8px 16px rgba(92, 77, 92, 0.10);
+    transition: transform 0.35s ease;
 }
 
 .imagenes-catalogo:hover {
-    transform: scale(1.06);
+    transform: scale(1.04);
 }
 
 .contenedor-central {
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     min-width: 0;
-    padding: 2px 6px;
+    padding: 2px 4px;
 }
 
 .contenedor-central h3 {
-    margin: 0 0 6px 0;
+    margin: 0 0 4px 0;
     font-size: 18px;
+    letter-spacing: 0.3px;
 }
 
 .descripcion-producto {
@@ -436,35 +433,68 @@ h3 {
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 22px;
+    color: #4A3D39;
 }
 
 .contenedor-derecha {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 8px;
+    gap: 10px;
     width: 170px;
     min-width: 170px;
     flex-shrink: 0;
     font-family: "Quicksand", sans-serif;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 18px;
 }
 
 .contenedor-precios {
-    padding: 8px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.55);
+    padding: 10px 12px;
+    border: 1px solid rgba(96, 79, 93, 0.18);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.72);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .contenedor-precios p {
-    margin: 0 0 6px 0;
+    margin: 0 0 7px 0;
 }
 
 .contenedor-precios p:last-child {
     margin-bottom: 0;
+}
+
+.nota-categoria {
+    max-width: 760px;
+    margin: 0 auto 18px auto;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7A6A63;
+    font-style: italic;
+}
+
+.nota-producto {
+    margin: 2px 0 0 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #7A6A63;
+    font-style: italic;
+}
+
+.nota-panificados {
+    max-width: 760px;
+    margin: 0 auto 18px auto;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7A6A63;
+    font-style: italic;
 }
 
 /* =========================
@@ -532,7 +562,7 @@ footer p {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 400;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     color: #2F2522;
 }
 
@@ -550,7 +580,7 @@ footer p {
 
     .logo-titulo {
         font-size: 38px;
-        letter-spacing: 6px;
+        letter-spacing: 4px;
     }
 
     .logo-subtitulo {
@@ -565,7 +595,7 @@ footer p {
     .main-nav a {
         padding: 8px 10px;
         font-size: 14px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     .presentacion {
@@ -623,7 +653,7 @@ footer p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 14px;
+        padding: 16px;
     }
 
     .contenedor-central {
@@ -638,13 +668,24 @@ footer p {
 
     .imagenes-catalogo {
         width: 100%;
-        max-width: 220px;
+        max-width: 240px;
         height: auto;
         aspect-ratio: 3 / 2;
     }
 
     .catalogo-titulo {
         text-align: center;
+    }
+
+    .subtitulos-catalogo {
+        font-size: 26px;
+    }
+
+    .nota-categoria,
+    .nota-panificados {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0 8px;
     }
 
     .donde-encontrarnos {
@@ -663,9 +704,5 @@ footer p {
 
     .section-title {
         font-size: 30px;
-    }
-
-    .subtitulos-catalogo {
-        font-size: 24px;
     }
 }
