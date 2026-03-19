@@ -20,18 +20,17 @@
 
     <header class="site-header">
         <div class="site-header-inner">
-            <input type="checkbox" id="menu-toggle-home" class="menu-toggle">
 
             <div class="branding">
                 <h1 class="logo-titulo">Núcleo Vegano</h1>
                 <p class="logo-subtitulo">Cocina vegana artesanal</p>
             </div>
 
-            <label for="menu-toggle-home" class="hamburguesa" aria-label="Abrir menú">
+            <button class="hamburguesa" aria-label="Abrir menú" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
-            </label>
+            </button>
 
             <nav class="menu-desplegable menu-home">
                 <ul>
@@ -176,6 +175,38 @@
         <p>© 2026 Núcleo Vegano®. Todos los derechos reservados.</p>
         <p>Córdoba, Argentina · Pedidos por WhatsApp · @nucleovegano</p>
     </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburguesa = document.querySelector(".hamburguesa");
+    const menu = document.querySelector(".menu-desplegable");
+    const linksMenu = document.querySelectorAll(".menu-desplegable a");
+
+    if (!hamburguesa || !menu) return;
+
+    hamburguesa.addEventListener("click", function (e) {
+        e.stopPropagation();
+        hamburguesa.classList.toggle("activo");
+        menu.classList.toggle("abierto");
+    });
+
+    menu.addEventListener("click", function (e) {
+        e.stopPropagation();
+    });
+
+    document.addEventListener("click", function () {
+        hamburguesa.classList.remove("activo");
+        menu.classList.remove("abierto");
+    });
+
+    linksMenu.forEach(link => {
+        link.addEventListener("click", function () {
+            hamburguesa.classList.remove("activo");
+            menu.classList.remove("abierto");
+        });
+    });
+});
+</script>
 
 </body>
 </html>
