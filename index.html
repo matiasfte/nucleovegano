@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet"
     >
 </head>
@@ -20,10 +20,26 @@
 
     <header class="site-header">
         <div class="site-header-inner">
+            <input type="checkbox" id="menu-toggle-home" class="menu-toggle">
+
             <div class="branding">
                 <h1 class="logo-titulo">Núcleo Vegano</h1>
                 <p class="logo-subtitulo">Cocina vegana artesanal</p>
             </div>
+
+            <label for="menu-toggle-home" class="hamburguesa" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="menu-desplegable menu-home">
+                <ul>
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#pedidos-eventos">Pedidos y eventos</a></li>
+                    <li><a href="#donde-encontrarnos">¿Dónde encontrarnos?</a></li>
+                </ul>
+            </nav>
 
             <nav class="main-nav">
                 <ul>
@@ -35,7 +51,7 @@
     </header>
 
     <main>
-        <section class="presentacion">
+        <section id="quienes-somos" class="presentacion">
             <div class="p-presentacion">
                 <p>
                     ¡Bienvenidas y bienvenidos a Núcleo Vegano!
@@ -68,7 +84,7 @@
             >
         </section>
 
-        <section class="favoritos-home">
+        <section id="pedidos-eventos" class="favoritos-home">
             <div class="bloque-favoritos">
                 <h2 class="section-title titulo-favoritos">Favoritos de la semana</h2>
 
@@ -126,7 +142,7 @@
             </div>
         </section>
 
-        <section class="donde-encontrarnos">
+        <section id="donde-encontrarnos" class="donde-encontrarnos">
             <h2 class="section-title">Dónde encontrarnos</h2>
             <p class="intro-locales">
                 También podés encontrar productos de Núcleo Vegano en algunos espacios amigos de la ciudad.

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet"
     >
 </head>
@@ -20,10 +20,28 @@
 
     <header class="site-header">
         <div class="site-header-inner">
+            <input type="checkbox" id="menu-toggle-catalogo" class="menu-toggle">
+
             <div class="branding">
                 <h1 class="logo-titulo">Núcleo Vegano</h1>
                 <p class="logo-subtitulo">Cocina vegana artesanal</p>
             </div>
+
+            <label for="menu-toggle-catalogo" class="hamburguesa" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="menu-desplegable menu-catalogo">
+                <ul>
+                    <li><a href="#dulces">Dulces</a></li>
+                    <li><a href="#salados">Salados</a></li>
+                    <li><a href="#tartas">Tartas</a></li>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#panificados">Panificados</a></li>
+                </ul>
+            </nav>
 
             <nav class="main-nav">
                 <ul>
@@ -38,7 +56,7 @@
         <section id="catalogo" class="catalogo-section">
             <h2 class="section-title catalogo-titulo">Nuestras Delicias</h2>
 
-            <h3 class="subtitulos-catalogo">Dulces</h3>
+            <h3 id="dulces" class="subtitulos-catalogo">Dulces</h3>
 
             <div class="contenedor-catalogo">
                 <article class="contenedor-individual">
@@ -230,7 +248,7 @@
                 </article>
             </div>
 
-            <h3 class="subtitulos-catalogo">Salados</h3>
+            <h3 id="salados" class="subtitulos-catalogo">Salados</h3>
 
             <div class="contenedor-catalogo">
                 <article class="contenedor-individual">
@@ -275,31 +293,9 @@
                         </a>
                     </div>
                 </article>
-
-                <article class="contenedor-individual">
-                    <img src="images/catalogo/pan-molde.jpg" alt="Pan de molde" class="imagenes-catalogo">
-
-                    <div class="contenedor-central">
-                        <h3>Pan de Molde</h3>
-                        <p class="descripcion-producto">
-                            Pan de 800 g, hecho con harina integral, aceite de girasol y mix de semillas.
-                        </p>
-                    </div>
-
-                    <div class="contenedor-derecha">
-                        <div class="contenedor-precios">
-                            <p>$4.500</p>
-                            <p>Rinde aprox. 12 rodajas, ideal para tostadas o sanguches.</p>
-                        </div>
-
-                        <a href="https://wa.me/5492966679479?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" class="boton-links">
-                            Hacer pedido
-                        </a>
-                    </div>
-                </article>
             </div>
 
-            <h3 class="subtitulos-catalogo">Tartas</h3>
+            <h3 id="tartas" class="subtitulos-catalogo">Tartas</h3>
             <p class="nota-categoria">
                 Todas las tartas vienen en estos tamaños: M = 8 porciones medianas · G = 10 porciones grandes.
             </p>
@@ -422,7 +418,7 @@
                 </article>
             </div>
 
-            <h3 class="subtitulos-catalogo">Cookies</h3>
+            <h3 id="cookies" class="subtitulos-catalogo">Cookies</h3>
 
             <div class="contenedor-catalogo">
                 <article class="contenedor-individual">
@@ -492,7 +488,7 @@
                 </article>
             </div>
 
-            <h3 class="subtitulos-catalogo">Panificados</h3>
+            <h3 id="panificados" class="subtitulos-catalogo">Panificados</h3>
             <p class="nota-categoria">Producción: viernes · Entregas: sábado de cada semana.</p>
 
             <div class="contenedor-catalogo">
